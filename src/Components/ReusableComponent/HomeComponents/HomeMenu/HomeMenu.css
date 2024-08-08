@@ -1,0 +1,97 @@
+
+.menus{
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid #dd127b;
+    
+  }
+  .M1{
+    padding: 50px 40px;
+  }
+  .M1 p{
+    font-size: 28px;
+    font-family: 'Aileron-Thin';
+    color: #dd127b;
+  }
+  .M1 h2{
+    font-family: 'TrajanPro-Regular';
+    color: #fff;
+    margin-top: -10px;
+    font-size: 48px;
+  }
+  
+  .MenuItem{
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+  }
+  .item{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    background-color: #fff;
+    padding: 80px 40px;
+  }
+  .MenuList li{
+    text-align: left;
+    color: #000;
+    font-family: 'Aileron-Thin';
+    font-size: 20px;
+  }
+  #plus{
+    color: #dd127b;
+    padding-right: 5px;
+  }
+  .cl2{
+    width: 30%;
+    background-color: #dd127b;
+   display: grid;
+   place-items: center;
+  }
+  .cl2 h2{
+  font-family: 'TrajanPro-Regular';
+  color: #fff;
+  font-size: 40px;
+  }
+  
+  .explore-btn{
+    padding: 8px 50px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Aileron-Bold';
+    margin: 25px 0;
+    background-color: #fff;
+  }
+  @media(max-width:999px){
+    .item{
+        gap: 3%;
+      }
+  }
+
+  @media(max-width:768px){
+    .MenuItem{
+        width: 100vw;
+        display: block;
+      }
+      .item{
+        /* display: grid; */
+        width: 96%;
+      }
+      .cl2{
+        width: 96%;
+        padding: 50px 0;
+      }
+  }
+
+  @media(max-width:570px){
+    .item{
+        display: grid;
+        place-items: center;
+        gap: 5%;
+        background-color: #fff;
+        padding: 30px 40px;
+      }
+  }
+

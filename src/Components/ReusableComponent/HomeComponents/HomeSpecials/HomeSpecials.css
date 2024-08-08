@@ -1,0 +1,64 @@
+.specials{
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .head h2{
+    font-family: 'TrajanPro-Regular';
+    color: #fff;
+    text-align: center;
+    padding: 50px 40px;
+    font-size: 48px;
+  }
+  
+  .SP_item{
+    width: 100%;
+    background-color: #dd127b;
+    display: flex;
+    align-items: center;
+    gap: 10%;
+  }
+  .SP_item img{
+    width:350px;
+  }
+  .description{
+    max-width: 850px;
+    color: #fff;
+  }
+  .description h1{
+    font-family: 'Aileron-Thin';
+    font-size: 65px;
+  }
+  .description p{
+    font-family: 'Aileron-Thin';
+    font-size: 19px;
+  }
+
+  @media(max-width:999px){
+    .SP_item{
+        align-items: normal;
+      }
+    
+    }
+
+    @media(max-width:768px){
+        .SP_item{
+            width: 100%;
+            background-color: #dd127b;
+            display: block;
+            align-items: normal;
+            gap: 3%;
+          }
+          .description{
+            padding: 20px;
+          }
+         
+          .description p{
+            font-family: 'Aileron-Thin';
+            text-align: justify;
+          }
+          .SP_item img{
+            width:300px;
+          }
+    }
+
+    
