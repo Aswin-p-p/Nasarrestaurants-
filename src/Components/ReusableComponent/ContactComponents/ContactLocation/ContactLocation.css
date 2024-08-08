@@ -1,0 +1,27 @@
+
+.CT_location{
+    width: 100%;
+    text-align: center;
+   padding: 60px 30px;
+  }
+  .CT_location h2{
+    font-family: 'Aileron-Bold';
+    color: #fff;
+  }
+  .CT_location p{
+    font-family: 'Aileron-Light';
+    font-size: 22px;
+  }
+  .connect a{
+  color: #dd127b;
+  }
+  
+  .location-map{
+    width: 100%;
+  
+  }
+  .location-map img{
+    width: 100%;
+    object-fit: cover;
+  }
+  

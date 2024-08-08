@@ -72,15 +72,15 @@
 
   @media(max-width:768px){
     .MenuItem{
-        width: 100vw;
+        width: 100%;
         display: block;
       }
       .item{
         /* display: grid; */
-        width: 96%;
+        width: 99%;
       }
       .cl2{
-        width: 96%;
+        width: 99%;
         padding: 50px 0;
       }
   }

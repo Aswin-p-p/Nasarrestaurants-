@@ -1,0 +1,153 @@
+
+.contactUs{
+    width: 100%;
+    padding: 40px 0;
+    border-bottom: 1px solid #dd127b;
+  }
+  .CT_details{
+    width: 100%;
+    display: flex;
+    gap: 30%;
+    padding: 0 40px;
+  }
+  .CT_details img{
+    width: 250px;
+  }
+  .CT-row h1{
+    font-size: 50px;
+    color: #dd127b;
+    font-family: 'TrajanPro-Regular';
+  }
+  .CT-row p{
+    font-size: 20px;
+    font-family: 'TrajanPro-Regular';
+    margin-top: -10px;
+    text-align: center;
+  }
+  
+  .CT-message{
+    background-color: #eb008b; /* Matching the background color */
+    padding: 40px;
+    width: 100%;
+    display: grid;
+   place-items: center;
+   margin: 20px 0;
+  }
+  .CT-message h3{
+    color: #fff;
+    font-family: 'Aileron-Light';
+    font-size: 35px;
+    text-align: center;
+  }
+  .CT-message p{
+    max-width: 850px;
+    text-align: center;
+    font-family: 'Aileron-Light';
+    font-size: 18px;
+  }
+  .CTform-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 0 50px;
+  }
+  
+  .form-row{
+    width: 450px;
+    /* padding: 8px; */
+    border: 1px solid #fff;
+    margin: 8px 0;
+  }
+  
+  .form-row input,.form-row textarea{
+    width: calc(100% - 40px); /* 100% width minus padding (20px on each side) */
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-family: 'Aileron-Light';
+    padding: 20px;
+    font-size: 16px;
+    color: white;
+  }
+  .form-row input::placeholder, 
+  .form-row textarea::placeholder {
+    color: white;
+    
+  }
+  
+  .form-row textarea{
+    height: 130px;
+    resize: none;
+  }
+  .msg-btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .msg-btn button{
+    padding: 8px 30px;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: 18px;
+    font-family: 'Aileron-Light';
+  }
+
+  @media(max-width:1200px){
+    .CTform-container {
+      gap: 0;
+    }
+  }
+  
+
+  @media(max-width:768px){ 
+    .CT_details{
+        gap: 10%;
+      }
+      .CTform-container {
+        width: 100%;
+        gap: 0;
+      }
+      .form-row{
+        border: 1px solid #fff;
+        margin: 6px 0;
+      }
+      
+      .form-row input,.form-row textarea{
+        width: 100%;
+        height: 100%;
+        padding: 16px;
+      }
+      .form-row textarea{
+        height: 150px;
+      }
+  }
+
+  @media (max-width:600px){
+    .form-row{
+        width: 100%;
+      }
+      .CTform-container{
+        display: block;
+      }
+      .CT_details{
+        width: 100%;
+        display: grid;
+        place-items: center;
+        gap: 0;
+        padding: 0 40px;
+      }
+  }
+  @media(max-width:450px){
+
+    .CT_details img{
+      width: 200px;
+    }
+    .CT-row h1{
+      font-size: 40px;
+    }
+  }
+  

@@ -4,7 +4,7 @@ import './HomeTestimonial.css'
 function HomeTestimonial() {
   return (
     <>
-    <div class="testimonial-container">
+ <div class="testimonial-container">
   <div class="test_contents">
       <h6>Testimonials</h6>
       <h3>Where Every Bite Tells a Story</h3>

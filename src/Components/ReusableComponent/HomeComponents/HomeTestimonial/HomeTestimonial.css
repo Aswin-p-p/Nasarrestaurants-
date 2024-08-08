@@ -1,28 +1,27 @@
 
 .testimonial-container{
-    width: 100%;
-    display: grid;
-    place-items: center;
-    text-align: center;
-    background-color: #2e2e2e;
-    padding: 50px 40px;
-  }
-  
-  .test_contents{
-    max-width: 800px;
-  }
-  .test_contents h6{
-    font-family: 'Aileron-Thin';
-    color: #dd127b;
-    font-size: 24px;
-  }
-  .test_contents h3{
-    font-family: 'Aileron-Regular';
-    color: #fff;
-    font-size: 35px;
-  }
-  .test_contents p{
-    font-family: 'Aileron-Light';
-    font-size: 19px;
-  }
-  
+  width: 100%;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  background-color: #2e2e2e;
+  padding: 50px 40px;
+}
+
+.test_contents{
+  max-width: 1200px;
+}
+.test_contents h6{
+  font-family: 'Aileron-Thin';
+  color: #dd127b;
+  font-size: 27px;
+}
+.test_contents h3{
+  font-family: 'Aileron-Regular';
+  color: #fff;
+  font-size: 38px;
+}
+.test_contents p{
+  font-family: 'Aileron-Light';
+  font-size: 19px;
+}
