@@ -11,9 +11,8 @@ function Aboutus() {
   <>
   <Navbar/>
   <AboutBanner/>
-  <Testimonial/>
-
   <Aboutusabout/> 
+  <Testimonial/>
   <Footer/>
   </>
   )
