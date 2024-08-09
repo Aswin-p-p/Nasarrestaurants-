@@ -1,0 +1,126 @@
+
+.news-container{
+    width: 100%;
+    padding: 40px 0;
+  }
+  .NW_details{
+    width: 100%;
+    display: flex;
+    gap: 30%;
+    padding: 0 40px;
+    border-bottom: 1px solid #515151;
+  }
+  .NW_details img{
+    width: 280px;
+  }
+  .NW-row h1{
+    font-family: 'TrajanPro-Regular';
+    text-transform: uppercase;
+    color: #dd127b;
+    font-size: 60px;
+    text-align: center;
+  }
+  .NW-row p{
+    font-family: 'TrajanPro-Regular';
+    text-transform: uppercase;
+    font-size: 22px;
+    margin-top: -10px;
+    text-align: center;
+  }
+  .CT_details img{
+    width: 250px;
+  }
+  
+  .news-row{
+    width: 100%;
+    margin-top: 6%;
+    margin-bottom: 8%;
+  }
+  
+  .nw-Row1{
+    display: flex;
+    align-items: start;
+    gap: 3%;
+    margin: 40px 0;
+  }
+  .img1{
+    width: 900px;
+    position: relative;
+  }
+  .img1 img{
+    width: 100%;
+    object-fit: cover;
+   
+  }
+  .img1::before{
+    width: 8px;
+    height: 100%;
+    background-color: #dd127b;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+  }
+  .nwContent{
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 25px;
+  }
+  .nwContent h3{
+    color: #dd127b;
+    font-family: 'Aileron-Bold';
+  }
+  .date{
+    max-width: 160px;
+    font-family: 'Aileron-Thin';
+    border-bottom: 1px solid #ebebeb;
+    font-size: 18px;
+    
+  }
+  .nwContent p{
+    font-family: 'Aileron-Thin';
+    font-size: 18px;
+
+  }
+  .readmore{
+    padding: 4px 30px;
+    background-color: #dd127b;
+    font-family: 'Aileron-Bold';
+  }
+
+  @media(max-width:999px){
+  
+    .nw-Row1{
+      display: block;
+      align-items: start;
+      gap: 3%;
+      margin: 40px 0;
+    }
+    .img1{
+      width: 100%;
+      position: relative;
+      margin-bottom: 20px;
+    }
+    .NW_details{
+      gap: 10%;
+    }
+    
+  }
+
+  
+@media(max-width:768px){ 
+    .NW_details{
+        width: 100%;
+        display: grid;
+        place-items: center;
+        gap: 0;
+      }
+      .NW-row h1{
+        font-size: 50px;
+        text-align: center;
+      }
+}
+
+@media (max-width:600px){
+
+}

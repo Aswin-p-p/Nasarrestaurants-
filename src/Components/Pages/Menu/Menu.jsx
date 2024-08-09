@@ -5,7 +5,7 @@ function Menu() {
   return (
     <>
     <Navbar/>
-    
+      <div  onClick={alert('page undermaintance')}/>
     <Footer/>
     </>
   )

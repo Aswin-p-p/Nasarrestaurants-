@@ -6,6 +6,7 @@ function Gallery() {
   return (
     <>
     <Navbar/>
+    <div  onClick={alert('page undermaintance')}/>
     <Footer/>
     </>
   )
