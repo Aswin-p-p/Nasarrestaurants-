@@ -1,0 +1,137 @@
+/* Ensure the Lightbox navigation buttons are always visible */
+.lb-nav {
+  opacity: 1 !important; /* Ensure buttons are always visible */
+  visibility: visible !important; /* Ensure buttons are not hidden */
+  position: absolute !important; /* Position them absolutely */
+  z-index: 9999 !important; /* Ensure they are above other elements */
+}
+
+/* Style for the Prev and Next buttons */
+.lb-prev, .lb-next {
+  opacity: 1 !important; /* Ensure buttons are always visible */
+  visibility: visible !important; /* Ensure buttons are not hidden */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox .lb-image {
+
+    border-radius: none !important;
+    border: none !important;;
+}
+
+/* Positioning adjustments for Prev and Next buttons */
+.lb-prev {
+ background: url('../../../../../public/assets/galleryimg/back.png')left 48%  no-repeat !important ;
+  margin-top: 250px;
+  left: 10px !important; /* Adjust as needed */
+}
+
+.lb-next {
+  background: url('../../../../../public/assets/galleryimg/next\ \(1\).png')right 48% no-repeat !important;
+    margin-top: 250px;
+  right: 10px !important; /* Adjust as needed */
+}
+
+/* Ensure buttons have correct positioning */
+.lb-nav a {
+  display: block !important;
+}
+.lb-close{ 
+    background: url('../../../../../public/assets/galleryimg/crossBtn.png') top right no-repeat !important; 
+    position: absolute;
+    top: -35px;
+    /* left: 100px; */
+    /* right: 10px; */
+    margin-left: 570px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.lb-caption{
+    display: none !important;
+}
+
+.lb-number{
+    display: none !important;
+    margin-left: 250px !important;
+}
+
+@media(max-width:600px){
+    .lb-prev {
+        margin-top: 230px;
+      left: 10px !important; /* Adjust as needed */
+    }
+    
+    .lb-next {
+        margin-top: 230px;
+      right: 10px !important; /* Adjust as needed */
+    }
+    
+
+    .lb-close{
+        position: absolute;
+        top: -30px;
+        /* left: 100px; */
+        /* right: 10px; */
+        margin-left: 530px;
+        color: #fff;
+        font-size: 30px;
+        cursor: pointer;
+    }
+}
+
+@media(max-width:450px){
+    .lb-prev {
+        margin-top: 190px;  
+
+    }
+    
+    .lb-next {
+        margin-top: 190px;
+     
+    }
+    
+
+    .lb-close{
+      margin-left: 360px;
+ 
+    }
+}
+@media(max-width:400px){
+    .lb-prev {
+        margin-top: 170px;  
+
+    }
+    
+    .lb-next {
+        margin-top: 170px;
+     
+    }
+    
+
+    .lb-close{
+      margin-left: 320px;
+ 
+    }
+}
+@media(max-width:321px){
+    .lb-prev {
+        margin-top: 150px;  
+
+    }
+    
+    .lb-next {
+        margin-top: 150px;
+     
+    }
+    
+
+    .lb-close{
+      margin-left: 260px;
+ 
+    }
+}
+
+
