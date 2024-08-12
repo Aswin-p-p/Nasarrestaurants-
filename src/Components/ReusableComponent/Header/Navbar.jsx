@@ -20,7 +20,7 @@ function Navbar() {
         <li><a href=""><img src="assets/images/telegram.png" alt="" width="15px"/></a></li>
       </div>
   </div>
-  <div ><img src="assets/images/logo.png" alt="" className="logo"/></div>
+  <div ><a href="/"><img src="assets/images/logo.png" alt="" className="logo"/></a></div>
   <div className="delivery">
     <h6>Fastest <br/>
       Delivery</h6>
