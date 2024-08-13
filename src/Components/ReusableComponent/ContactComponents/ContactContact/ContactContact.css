@@ -32,6 +32,8 @@
     display: grid;
    place-items: center;
    margin: 20px 0;
+ 
+
   }
   .CT-message h3{
     color: #fff;
@@ -70,6 +72,7 @@
     padding: 20px;
     font-size: 16px;
     color: white;
+    
   }
   .form-row input::placeholder, 
   .form-row textarea::placeholder {

@@ -12,7 +12,7 @@ function Navbar() {
     <div className="topHeader">
 <nav className="navBar">
   <div className="contact">
-      <li><img src="assets/images/call.png" alt="" width="15px"/>+97126228788</li>
+      <li className='phonenum'><img src="assets/images/call.png" alt="" width="15px"/> <span className='ms-1'> +97126228788</span></li>
       <div className="socialMedia">
         <li><a href=""><img src="assets/images/twitter_icon.png"  alt="" width="15px"/></a></li>
         <li><a href=""><img src="assets/images/facebook.png" alt="" width="10px"/></a></li>

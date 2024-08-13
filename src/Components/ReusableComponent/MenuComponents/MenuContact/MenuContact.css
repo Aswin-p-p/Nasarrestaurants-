@@ -1,0 +1,244 @@
+
+.menuContainer{
+    width: 100%;
+    padding: 40px 0;
+  }
+  .ME_details{
+    width: 100%;
+    display: flex;
+   align-items: center;
+   justify-content: space-between;
+    padding: 0 40px;
+  }
+  .ME_details img{
+    width: 220px;
+  }
+  .ME-row h1{
+    font-size: 50px;
+    color: #dd127b;
+    font-family: 'TrajanPro-Regular';
+  }
+  .ME-row p{
+    font-size: 20px;
+    font-family: 'TrajanPro-Regular';
+    margin-top: -10px;
+    /* text-align: center; */
+  }
+  
+  .menu-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;;
+    padding: 20px;
+    background-color: #dd127b;
+    gap: 10%;
+    /* flex-wrap: wrap; */
+    position: relative;
+    margin: 30px 0;
+    padding: 60px 40px 60px 40px;
+  }
+  
+  .sidebar {
+    
+    display: flex;
+    align-items: center;
+    /* gap: 80px; */
+  }
+  .sidebar h1{
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);  
+    font-family: 'TrajanPro-Regular';
+    font-size: 50px;
+    padding-right: 20px;
+    color: #fff;
+  }
+  .item1{
+    width: 250px ;
+  }.item2{
+    width: 320px ;
+  }
+  
+  
+  .me-itemList {
+    width: 100% ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 0 30px;
+  
+  }
+  
+  .me-itemList p {
+    margin: 0;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 23px;
+  }
+  
+  .me-itemList span {
+    font-weight: 300;
+    font-size: 17px;
+  }
+  
+  
+  .lineme {
+    width: 300px;
+    flex-grow: 1; 
+    border-bottom: 2px solid white;
+    margin: 0 10px;
+    position: relative;
+  }
+  .lineme::after{
+    content: '';
+    width: 100%;
+    position: absolute;
+    top: 5px;
+    flex-grow: 1;
+    border-bottom: 2px solid white;
+  }
+
+  @media(max-width:1450px){
+    .menu-container {
+      display: flex ;
+      align-items: center;
+      /* justify-content: left; */
+      padding: 20px;
+      background-color: #dd127b;
+      gap: 0;
+    }
+    
+    .sidebar {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .lineme {
+      width: 200px;
+      flex-grow: 1; 
+      border-bottom: 2px solid white;
+      margin: 0 10px;
+      position: relative;
+    }
+  
+  }
+  @media(max-width:1130px){
+    .sidebar {
+      display: flex;
+      align-items: center;
+      /* justify-content: center;  */
+      gap: 20px;
+    }
+    .itemImg{
+      flex-direction: row-reverse;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      left: 0;
+    }
+    .secondList{
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column-reverse ;
+    }
+    .row2{
+      width: 100%;
+    }
+    .menu-container {
+      display: block;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background-color: #dd127b;
+      gap: 0;
+    }
+    
+  
+  
+  }
+
+  
+  @media(max-width:768px){ 
+
+
+      .ME_details{
+          gap: 10%;
+        }
+  .me-itemList p {
+    margin: 0;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 23px;
+  }
+  
+  .me-itemList span {
+    font-weight: 300;
+    font-size: 15px;
+  }
+  
+  .price {
+    font-weight: 600;
+    font-size: 25px;
+    color: #ffffff;
+  padding-left: 10px;
+  text-align: left !important;
+  }
+      
+  }
+  
+  @media (max-width:600px){
+    
+    .ME_details{
+      width: 100%;
+      display: block;
+     align-items: center;
+     justify-content: left;
+      padding: 0 40px;
+    }
+    .sidebar img{
+      width: 100%;
+      margin: 20px 0;
+    }
+    .sidebar h1{
+      font-size: 40px;  
+    }
+    .me-itemList p {
+      font-size: 22px;
+  
+    }
+  }
+  
+  @media(max-width:450px){
+
+    .ME_details img{
+      width: 200px;
+    }
+    .ME-row h1{
+      font-size: 40px;
+    }
+  
+    .me-itemList {
+      width: 100% ;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+      padding: 0 30px;
+    
+    }
+    .lineme {
+      display: none;
+    }
+  
+    .me-itemList p {
+      margin: 0;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 23px;
+    }
+  }
+  
+  
+  
