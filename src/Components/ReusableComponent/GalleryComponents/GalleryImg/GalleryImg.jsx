@@ -15,7 +15,31 @@ function GalleryImg() {
       'alwaysShowNavOnTouchDevices': true,
       'fadeDuration': 300,
       'imageFadeDuration': 300,
-    })
+    });
+    
+    // Mutation observer to detect Lightbox visibility changes
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach(mutation => {
+        if (mutation.attributeName === 'style') {
+          const lightboxImage = document.querySelector('.lightbox');
+          if (lightboxImage && lightboxImage.style.display !== 'none') {
+            document.body.style.overflow = 'hidden';
+          } else {
+            document.body.style.overflow = '';
+          }
+        }
+      });
+    });
+
+    // Observe changes to the body element
+    observer.observe(document.body, {
+      attributes: true,
+      subtree: true,
+      attributeFilter: ['style'],
+    });
+
+    // Cleanup: disconnect observer
+    return () => observer.disconnect();
   }, []);
 const toggleShowMore = () => {
   setShowMore(prevState => !prevState);
