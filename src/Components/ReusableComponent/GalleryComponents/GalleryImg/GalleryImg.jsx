@@ -6,6 +6,7 @@ import lightbox from "lightbox2";
 
 function GalleryImg() {
   const [showMore, setShowMore] = useState(false);
+  const [isLightboxOpen, setIsLightboxOpen] = useState(false);
   
   useEffect(() => {
     // Initialize lightbox2
@@ -41,6 +42,10 @@ function GalleryImg() {
     // Cleanup: disconnect observer
     return () => observer.disconnect();
   }, []);
+
+
+
+  
 const toggleShowMore = () => {
   setShowMore(prevState => !prevState);
 };
