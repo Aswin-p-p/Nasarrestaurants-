@@ -18,6 +18,9 @@
     color: #dd127b;
     font-family: 'TrajanPro-Regular';
   }
+  .CT-row{
+    margin-left: -130px;
+  }
   .CT-row p{
     font-size: 20px;
     font-family: 'TrajanPro-Regular';
@@ -103,6 +106,9 @@
     .CTform-container {
       gap: 0;
     }
+    .CT-row{
+      margin-left: -0px;
+    }
   }
   
 
@@ -147,7 +153,7 @@
   @media(max-width:450px){
 
     .CT_details img{
-      width: 200px;
+      width: 200px !important;
     }
     .CT-row h1{
       font-size: 40px;

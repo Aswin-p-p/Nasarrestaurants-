@@ -2,6 +2,7 @@ import React from 'react'
 import './Footer.css'
 
 function Footer() {
+  const currentYear = new Date().getFullYear();
   return (
     <>
      <footer className="footerSection">
@@ -17,7 +18,7 @@ function Footer() {
           <li><a href="/contact">Contact</a></li>
         </ul>
 
-        <div className="copyright">&copy;2024 | Nasser Restaurant All Rights Reserved</div>
+        <div className="copyright">&copy;{currentYear} | Nasser Restaurant All Rights Reserved</div>
 
         <div className="socialMedia">
           <li><a href=""><img src="assets/images/twitter_icon.png" alt="" width="15px"/></a></li>
@@ -31,4 +32,4 @@ function Footer() {
   )
 }
 
-export default Footer
+export default Footer 
