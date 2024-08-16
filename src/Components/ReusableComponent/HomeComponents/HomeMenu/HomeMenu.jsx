@@ -13,12 +13,12 @@ function HomeMenu() {
   <div className="MenuItem">
       <div className="item">
         <img src="assets/images/menuItem1.png" alt="" width="250px"/>
-        <ul className="MenuList">
-            <li><span id="plus">+</span> classNameic Tomato Basil Soup</li>
-            <li><span id="plus">+</span> Creamy Mushroom Soup</li>
-            <li><span id="plus">+</span> Chicken Tortilla Soup</li>
-            <li><span id="plus">+</span> French Onion Soup</li>
-            <li><span id="plus">+</span> Lentil and Vegetable Soup</li>
+        <ul class="MenuList">
+            <li><div id="plus">+</div><div> Classic Tomato Basil Soup</div></li>
+            <li><div id="plus">+</div><div> Creamy Mushroom Soup</div></li>
+            <li><div id="plus">+</div><div> Chicken Tortilla Soup</div></li>
+            <li><div id="plus">+</div><div> French Onion Soup</div></li>
+            <li><div id="plus">+</div><div> Lentil and Vegetable Soup</div></li>
         </ul>
       </div>
 
