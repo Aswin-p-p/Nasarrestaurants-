@@ -11,45 +11,45 @@ import Loader from './Components/ReusableComponent/Loader/Loader';
 function App() {
   const [loading, setLoading] = useState(true);
 
-  // useEffect(() => {
-  //   const handleStart = () => {
-  //     setLoading(true);
-  //   };
+  useEffect(() => {
+    const handleStart = () => {
+      setLoading(true);
+    };
 
-  //   const handleEnd = () => {
-  //     setLoading(false);
-  //   };
+    const handleEnd = () => {
+      setLoading(false);
+    };
 
-  //   const startLoading = () => {
-  //     handleStart();
-  //   };
+    const startLoading = () => {
+      handleStart();
+    };
 
-  //   const endLoading = () => {
-  //     handleEnd();
-  //   };
+    const endLoading = () => {
+      handleEnd();
+    };
 
-  //   window.addEventListener('beforeunload', startLoading);
-  //   window.addEventListener('load', endLoading);
+    window.addEventListener('beforeunload', startLoading);
+    window.addEventListener('load', endLoading);
 
-  //   return () => {
-  //     window.removeEventListener('beforeunload', startLoading);
-  //     window.removeEventListener('load', endLoading);
-  //   };
-  // }, []);
+    return () => {
+      window.removeEventListener('beforeunload', startLoading);
+      window.removeEventListener('load', endLoading);
+    };
+  }, []);
 
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     setLoading(false);
-  //   }, 2500);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 3000);
 
-  //   return () => clearTimeout(timer);
-  // }, []);
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
    <>
-     {/* {loading ? (
+     {loading ? (
         <Loader />
-      ) : ( */}
+      ) : (
       <BrowserRouter>          
         <Routes>
             <Route path='/' element={<Home />} />
@@ -60,7 +60,7 @@ function App() {
             <Route path='/menu' element={<Menu />} />
             </Routes>
       </BrowserRouter>
-        {/* )} */}
+        )}
    </>
   );
 }
