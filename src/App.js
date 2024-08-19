@@ -12,37 +12,37 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const handleStart = () => {
-      setLoading(true);
-    };
-
-    const handleEnd = () => {
-      setLoading(false);
-    };
-
-    const startLoading = () => {
-      handleStart();
-    };
-
-    const endLoading = () => {
-      handleEnd();
-    };
-
-    window.addEventListener('beforeunload', startLoading);
-    window.addEventListener('load', endLoading);
-
-    return () => {
-      window.removeEventListener('beforeunload', startLoading);
-      window.removeEventListener('load', endLoading);
-    };
-  }, []);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 2500);
-
-    return () => clearTimeout(timer);
+    if (window.location.pathname === '/') {
+      const timer = setTimeout(() => {
+        setLoading(false);
+      }, 2000);
+      return () => clearTimeout(timer);
+    }else{
+      const handleStart = () => {
+        setLoading(true);
+      };
+  
+      const handleEnd = () => {
+        setLoading(false);
+      };
+  
+      const startLoading = () => {
+        handleStart();
+      };
+  
+      const endLoading = () => {
+        handleEnd();
+      };
+  
+      window.addEventListener('beforeunload', startLoading);
+      window.addEventListener('load', endLoading);
+  
+      return () => {
+        window.removeEventListener('beforeunload', startLoading);
+        window.removeEventListener('load', endLoading);
+      };
+    }
+   
   }, []);
 
   return (
