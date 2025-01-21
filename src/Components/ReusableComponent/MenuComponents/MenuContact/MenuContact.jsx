@@ -4,9 +4,9 @@ import './MenuContact.css'
 function MenuContact() {
   return (
    <>
-   <div class="menuContainer">
-  <div class="ME_details">
-      <div class="ME-row">
+   <div className="menuContainer">
+  <div className="ME_details">
+      <div className="ME-row">
         <h1>Menu</h1>
         <p>Passion for Flavor, Commitment <br/>
           to Quality</p>
@@ -16,114 +16,114 @@ function MenuContact() {
   </div>
 
 
-  <div class="menu-container">
-    <div class="sidebar">
+  <div className="menu-container">
+    <div className="sidebar">
         <h1>STARTERS</h1>
-            <div class="image-container">
-            <img src="assets/menuimg/ME-item1.png" alt="" class="item1"/>
+            <div className="image-container">
+            <img src="assets/menuimg/ME-item1.png" alt="" className="item1"/>
         </div>
     </div>
     
     
-        <div class="me-items">
-            <div class="me-itemList">
+        <div className="me-items">
+            <div className="me-itemList">
                 <p>Hello bonda <br/><span>Sub details line goes here</span></p>
                   <div className='lineme'></div>
-                <p class="price">AED 11.00</p>
+                <p className="price">AED 11.00</p>
             </div>
             
-            <div class="me-itemList">
+            <div className="me-itemList">
                 <p>Vegetable spring rolls <br/><span>Sub details line goes here</span></p>
                 <div className='lineme'></div>
-                <p class="price">AED 07.00</p>
+                <p className="price">AED 07.00</p>
             </div>
             
-            <div class="me-itemList">
+            <div className="me-itemList">
                 <p>Paneer Pakora <br/><span>Sub details line goes here</span></p>
                 <div className='lineme'></div>
-                <p class="price">AED 11.00</p>
+                <p className="price">AED 11.00</p>
             </div>
             
-            <div class="me-itemList">
+            <div className="me-itemList">
                 <p>Microwave paneer tikka <br/><span>Sub details line goes here</span></p>
                 <div className='lineme'></div>
-                <p class="price">AED 07.00</p>
+                <p className="price">AED 07.00</p>
             </div>
             
         </div>
  
 </div>
 
-<div class="menu-container secondList">
-      <div class="me-items row2">
-          <div class="me-itemList">
+<div className="menu-container secondList">
+      <div className="me-items row2">
+          <div className="me-itemList">
               <p>Prickly Pear Tonic <br/><span>Sub details line goes here</span></p>
                 <div className='lineme'></div>
-              <p class="price">AED 11.00</p>
+              <p className="price">AED 11.00</p>
           </div>
           
-          <div class="me-itemList">
+          <div className="me-itemList">
               <p>Chicha Morada<br/><span>Sub details line goes here</span></p>
               <div className='lineme'></div>
-              <p class="price">AED 07.00</p>
+              <p className="price">AED 07.00</p>
           </div>
           
-          <div class="me-itemList">
+          <div className="me-itemList">
               <p>Better Boy	 <br/><span>Sub details line goes here</span></p>
               <div className='lineme'></div>
-              <p class="price">AED 11.00</p>
+              <p className="price">AED 11.00</p>
           </div>
           
-          <div class="me-itemList">
+          <div className="me-itemList">
               <p>Tommy's Margarita <br/><span>Sub details line goes here</span></p>
               <div className='lineme'></div>
-              <p class="price">AED 07.00</p>
+              <p className="price">AED 07.00</p>
           </div>       
       </div>
 
-      <div class="sidebar itemImg">
+      <div className="sidebar itemImg">
         
-            <div class="image-container">
-            <img src="assets/menuimg/ME-item2.png" alt="" class="item2"/>
+            <div className="image-container">
+            <img src="assets/menuimg/ME-item2.png" alt="" className="item2"/>
         </div>
         <h1>Beverages</h1>
     </div>
 
 </div>
 
-<div class="menu-container">
-  <div class="sidebar">
+<div className="menu-container">
+  <div className="sidebar">
       <h1>Main <br/>
         Courses</h1>
-          <div class="image-container">
-          <img src="assets/menuimg/ME-item3.png" alt="" class="item1"/>
+          <div className="image-container">
+          <img src="assets/menuimg/ME-item3.png" alt="" className="item1"/>
       </div>
   </div>
   
   
-      <div class="me-items">
-          <div class="me-itemList">
+      <div className="me-items">
+          <div className="me-itemList">
               <p>Hello bonda <br/><span>Sub details line goes here</span></p>
                 <div className='lineme'></div>
-              <p class="price">AED 11.00</p>
+              <p className="price">AED 11.00</p>
           </div>
           
-          <div class="me-itemList">
+          <div className="me-itemList">
               <p>Vegetable spring rolls <br/><span>Sub details line goes here</span></p>
               <div className='lineme'></div>
-              <p class="price">AED 07.00</p>
+              <p className="price">AED 07.00</p>
           </div>
           
-          <div class="me-itemList">
+          <div className="me-itemList">
               <p>Paneer Pakora <br/><span>Sub details line goes here</span></p>
               <div className='lineme'></div>
-              <p class="price">AED 11.00</p>
+              <p className="price">AED 11.00</p>
           </div>
           
-          <div class="me-itemList">
+          <div className="me-itemList">
               <p>Microwave paneer tikka <br/><span>Sub details line goes here</span></p>
               <div className='lineme'></div>
-              <p class="price">AED 07.00</p>
+              <p className="price">AED 07.00</p>
           </div>
           
       </div>

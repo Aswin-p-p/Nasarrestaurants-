@@ -9,10 +9,10 @@ function Menubanner() {
   }, [])
   return (
     <>
-    <section class="menu_home">
-  <div class="ME_banner">
-    <div class="ME_content">
-    <h1 className={` ${animate ? 'animate__animated animate__flipInX' : ''}`}>Deliciously <br/>
+    <section className="menu_home">
+  <div className="ME_banner">
+    <div className="ME_content">
+    <h1 classNameName={` ${animate ? 'animate__animated animate__flipInX' : ''}`}>Deliciously <br/>
       Authentic</h1>
       <p>Your Culinary Adventure Starts Here</p>
     </div>

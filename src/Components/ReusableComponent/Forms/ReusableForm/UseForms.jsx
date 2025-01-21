@@ -79,10 +79,6 @@ function useForm() {
       return;
     }
 
-    // Submit the form or perform further actions
-    setLoading(true);
-    // You can add form submission logic here
-    setLoading(false);
   };
 
   return {

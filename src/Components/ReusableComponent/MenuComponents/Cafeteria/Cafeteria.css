@@ -1,0 +1,124 @@
+.flipper-containerCafeteria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Make container relative for absolute positioning */
+    height: 90% !important;
+    /* Optional: to center vertically */
+  }
+  
+  .flipperCafeteria {
+    width: 90%; /* Set width to 90% of the container for responsiveness */
+    max-width: 600px; /* Limit the maximum width */
+    height: auto; /* Adjust height based on aspect ratio */
+    perspective: 1000px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+  }
+  
+  .flipperCafeteria img {
+    width: 100%; /* Take full width of the flipper */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .flipperCafeteria.zoomed {
+    transform: scale(2); /* Adjust zoom for smaller screens */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .controlsCafeteria {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+  }
+  
+  .controlsCafeteria.left {
+    left: 10px; /* Position the "Previous" button on the left */
+  }
+  
+  .controlsCafeteria.right {
+    right: 10px; /* Position the "Next" button on the right */
+  }
+  
+  .controlsCafeteria button {
+    margin: 5px 10px;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: black;
+    border: 2px solid #dd127b;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .controlsCafeteria button:hover {
+    background-color: #dd127b;
+    color: black;
+  }
+  
+  .controlsCafeteria button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+  
+  @media (max-width: 768px) {
+    .controlsCafeteria.left {
+        left: -10px; /* Position the "Previous" button on the left */
+      }
+    .flipper-containerCafeteria{
+        height: 90% !important;
+    }
+    .flipperCafeteria img {
+      width:65%;
+      height: auto;
+    }
+  
+    .flipperCafeteria.zoomed {
+      transform: scale(1.3);
+    }
+  
+    .controlsCafeteria button {
+      font-size: 12px;
+      padding: 8px 12px;
+    }
+  }
+  @media (max-width: 608px) {
+    .controlsCafeteria.left {
+        left: -15px; /* Position the "Previous" button on the left */
+      }
+    .flipper-containerCafeteria{
+        height: 90% !important;
+    }
+    .flipperCafeteria img {
+      width:100%;
+      height: auto;
+    }
+  
+    .flipperCafeteria.zoomed {
+      transform: scale(1.3);
+    }
+  
+    .controlsCafeteria button {
+        padding: 2px 3px;
+        margin: 0;
+    }
+    .controlsCafeteria.right {
+        right: -15px;
+    }
+  }
+ 
+  
+  /* @media (max-width: 480px) {
+    .controlsCafeteria button {
+      font-size: 10px;
+      padding: 6px 10px;
+    }
+  } */
+  

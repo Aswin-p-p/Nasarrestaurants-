@@ -9,15 +9,15 @@ function NewsBanner() {
   }, [])
   return (
    <>
-   <section class="news_home">
-  <div class="NW_banner">
-    {/* <div class="NW_LN1"></div> */}
-    <div class="NW_content">
+   <section className="news_home">
+  <div className="NW_banner">
+    {/* <div className="NW_LN1"></div> */}
+    <div className="NW_content">
     <h1 className={` ${animate ? 'animate__animated animate__flipInX' : ''}`}>Deliciously <br/>
       Authentic</h1>
       <p>Your Culinary Adventure Starts Here</p>
     </div>
-    {/* <div class="NW_LN1"></div> */}
+    {/* <div className="NW_LN1"></div> */}
   </div>
 </section>
    </>

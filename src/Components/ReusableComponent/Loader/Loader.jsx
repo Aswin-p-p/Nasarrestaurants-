@@ -9,7 +9,6 @@ function Loader() {
       <div style={{ width: '300px',  }}>
         <Lottie
           path="https://lottie.host/73cae04f-28eb-4ebb-a3cf-f94cb8946328/9ivepBoXT6.json"
-          background="#dd127b"
           speed={1}
           loop
           autoplay

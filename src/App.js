@@ -38,13 +38,13 @@ function App() {
     };
   }, []);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 2500);
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setLoading(false);
+  //   }, 2500);
 
-    return () => clearTimeout(timer);
-  }, []);
+  //   return () => clearTimeout(timer);
+  // }, []);
 
   return (
    <>
@@ -59,7 +59,7 @@ function App() {
             <Route path='/gallery' element={<Gallery/>} />
             <Route path='/news' element={<News />} />
             <Route path='/menu' element={<Menu />} />
-            </Routes>
+        </Routes>
       </BrowserRouter>
         )}
    </>
