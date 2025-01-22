@@ -5,14 +5,14 @@ const Restaurant = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const [isZoomed, setIsZoomed] = useState(false);
   const images = [
-    "assets/restaurant/Nasser Restaurant_page-0001.jpg",
-    "assets/restaurant/Nasser Restaurant_page-0002.jpg",
-    "assets/restaurant/Nasser Restaurant_page-0003.jpg",
-    "assets/restaurant/Nasser Restaurant_page-0004.jpg",
-    "assets/restaurant/Nasser Restaurant_page-0005.jpg",
-    "assets/restaurant/Nasser Restaurant_page-0006.jpg",
-    "assets/restaurant/Nasser Restaurant_page-0007.jpg",
-    "assets/restaurant/Nasser Restaurant_page-0008.jpg",
+    "assets/restaurant/Nasser-Restaurant_page-0001.jpg",
+    "assets/restaurant/Nasser-Restaurant_page-0002.jpg",
+    "assets/restaurant/Nasser-Restaurant_page-0003_11zon.jpg",
+    "assets/restaurant/Nasser-Restaurant_page-0004_11zon.jpg",
+    "assets/restaurant/Nasser-Restaurant_page-0005_11zon.jpg",
+    "assets/restaurant/Nasser-Restaurant_page-0006_11zon.jpg",
+    "assets/restaurant/Nasser-Restaurant_page-0007_11zon.jpg",
+    "assets/restaurant/Nasser-Restaurant_page-0008_11zon.jpg",
   ];
 
   const handleNext = () => {

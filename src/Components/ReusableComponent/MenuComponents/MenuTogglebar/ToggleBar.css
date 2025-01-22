@@ -14,7 +14,7 @@
     overflow: hidden;
     width: 500px;
     height: 50px;
-    background-color: #dd127b;
+    background-color: #000000;
     transition: width 0.3s ease;
 }
 
@@ -31,13 +31,13 @@
 }
 
 .toggle-option.active {
-    background-color: rgb(0, 0, 0);
+    background-color: #dd127b;
     color: #ffffff;
     font-weight: bold;
 }
 
 .toggle-option:not(.active):hover {
-    background-color: #dd127b;
+    background-color: #000000;
 }
 
 .component-display {
