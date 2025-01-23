@@ -122,6 +122,44 @@ const toggleShowMore = () => {
         <a href="assets/galleryimg/galleryimg9.jpg" data-lightbox="mygallery" data-title="My Image 9">
           <img src="assets/galleryimg/galleryimg9.jpg" alt="Gallery Image 9"/>
         </a>
+
+
+        <a href="assets/galleryimg/partyHall/party-hall-1.jpg" data-lightbox="mygallery" data-title="My Image 9">
+          <img src="assets/galleryimg/partyHall/party-hall-1.jpg" alt="partyHall Image 1"/>
+        </a>
+        <a href="assets/galleryimg/partyHall/party-hall-2.jpg" data-lightbox="mygallery" data-title="My Image 9">
+          <img src="assets/galleryimg/partyHall/party-hall-2.jpg" alt="partyHall Image 2"/>
+        </a>
+        <a href="assets/galleryimg/partyHall/party-hall-3.jpg" data-lightbox="mygallery" data-title="My Image 9">
+          <img src="assets/galleryimg/partyHall/party-hall-3.jpg" alt="partyHall Image 3"/>
+        </a>
+        <a href="assets/galleryimg/partyHall/party-hall-4.jpg" data-lightbox="mygallery" data-title="My Image 9">
+          <img src="assets/galleryimg/partyHall/party-hall-4.jpg" alt="partyHall Image 4"/>
+        </a>
+        <a href="assets/galleryimg/partyHall/party-hall-5.jpg" data-lightbox="mygallery" data-title="My Image 9">
+          <img src="assets/galleryimg/partyHall/party-hall-5.jpg" alt="partyHall Image 5"/>
+        </a>
+        <a href="assets/galleryimg/partyHall/party-hall-6.jpg" data-lightbox="mygallery" data-title="My Image 9">
+          <img src="assets/galleryimg/partyHall/party-hall-6.jpg" alt="partyHall Image 6"/>
+        </a>
+        <a href="assets/galleryimg/partyHall/party-hall-7.jpg" data-lightbox="mygallery" data-title="My Image 9">
+          <img src="assets/galleryimg/partyHall/party-hall-7.jpg" alt="partyHall Image 7"/>
+        </a>
+        <a href="assets/galleryimg/partyHall/party-hall-8.jpg" data-lightbox="mygallery" data-title="My Image 9">
+          <img src="assets/galleryimg/partyHall/party-hall-8.jpg" alt="partyHall Image 8"/>
+        </a>
+        <a href="assets/galleryimg/partyHall/party-hall-9.jpg" data-lightbox="mygallery" data-title="My Image 9">
+          <img src="assets/galleryimg/partyHall/party-hall-9.jpg" alt="partyHall Image 9"/>
+        </a>
+        <a href="assets/galleryimg/partyHall/party-hall-10.jpg" data-lightbox="mygallery" data-title="My Image 9">
+          <img src="assets/galleryimg/partyHall/party-hall-10.jpg" alt="partyHall Image 10"/>
+        </a>
+        <a href="assets/galleryimg/partyHall/party-hall-11.jpg" data-lightbox="mygallery" data-title="My Image 9">
+          <img src="assets/galleryimg/partyHall/party-hall-11.jpg" alt="partyHall Image 11"/>
+        </a>
+        <a href="assets/galleryimg/partyHall/party-hall-12.jpg" data-lightbox="mygallery" data-title="My Image 9">
+          <img src="assets/galleryimg/partyHall/party-hall-12.jpg" alt="partyHall Image 12"/>
+        </a>
         </>
 
 )}

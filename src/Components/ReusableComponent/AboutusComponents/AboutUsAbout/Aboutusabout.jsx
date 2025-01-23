@@ -8,7 +8,7 @@ function Aboutusabout() {
   <div className="AB_details">
     <h1>About Us</h1>
     <h3>Culinary Excellence <br/>
-      in the Heaart of Abu Dhabi</h3>
+    in the Heart of Abu Dhabi</h3>
     </div>
       <div className="AB_text">
         <div className="textDetails">

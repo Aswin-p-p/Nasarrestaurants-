@@ -8,7 +8,7 @@ function Footer() {
      <footer className="footerSection">
     <div className="footer-row">
       <div className="footer-logo"><img src="assets/images/logo.png" alt=""/></div>
-      <p>Old Airport Road <br/>Shaikh Rashid Bin Saeed Al Maktoum Street, Al Karamah St<br/>Near Sheikh Khalifa Medical City - Abu Dhabi , United Arab Emirates</p>
+      <p>Old Airport Road <br/>Sheikh Rashid Bin Saeed Al Maktoum Street, Al Karamah St<br/>Near Sheikh Khalifa Medical City - Abu Dhabi , United Arab Emirates</p>
         <ul className="links">
           <li><a href="/">Home</a></li>
           <li><a href="/aboutus">About us</a></li>
@@ -18,7 +18,7 @@ function Footer() {
           <li><a href="/contact">Contact</a></li>
         </ul>
 
-        <div className="copyright">&copy;{currentYear} | Nasser Restaurant All Rights Reserved</div>
+        <div className="copyright">&copy;{currentYear} | Nasar Restaurant All Rights Reserved</div>
 
         <div className="socialMedia">
           <li><a href=""><img src="assets/images/twitter_icon.png" alt="" width="15px"/></a></li>

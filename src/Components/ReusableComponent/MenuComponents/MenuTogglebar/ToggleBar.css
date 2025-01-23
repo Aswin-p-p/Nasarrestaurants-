@@ -42,9 +42,9 @@
 
 .component-display {
     margin-top: 20px;
-    width: 90%;
-    max-width: 90%;
-    padding: 20px;
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
     border: 2px solid #dd127b;
     border-radius: 10px;
     background-color: #000000;

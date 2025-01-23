@@ -5,9 +5,9 @@ function ContactLocation() {
   return (
     <>
       <div className="CT_location">
-        <h2>NASSER RESTAURANT</h2>
+        <h2>NASAR RESTAURANT</h2>
         <p>Old Airport Road <br/>
-          Shaikh Rashid Bin Saeed Al Maktoum Street <br/>
+          Sheikh Rashid Bin Saeed Al Maktoum Street <br/>
           - Al Karamah St - near Sheikh Khalifa Medical City <br/>
           Abu Dhabi - United Arab Emirates</p>
           <p>Phone:&nbsp; <span className="connect"><a href=""> +971 2 622 8788</a></span> &nbsp;  Email:&nbsp; <span className="connect"><a href=""> info@yourdomain.com</a></span></p>

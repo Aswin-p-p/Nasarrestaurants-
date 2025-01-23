@@ -39,15 +39,15 @@
   }
   
   .controlsCafeteria.left {
-    left: 10px; /* Position the "Previous" button on the left */
+    left: 0px; /* Position the "Previous" button on the left */
   }
   
   .controlsCafeteria.right {
-    right: 10px; /* Position the "Next" button on the right */
+    right: 0px; /* Position the "Next" button on the right */
   }
   
   .controlsCafeteria button {
-    margin: 5px 10px;
+    /* margin: 5px 10px; */
     padding: 10px 15px;
     font-size: 14px;
     cursor: pointer;
@@ -97,8 +97,8 @@
         height: 90% !important;
     }
     .flipperCafeteria img {
-      width:100%;
-      height: auto;
+        width: 80%;
+        height: auto;
     }
   
     .flipperCafeteria.zoomed {
@@ -114,6 +114,13 @@
     }
   }
  
+
+  @media (max-width: 480px) {
+    .flipperCafeteria img {
+        width: 100%;
+        height: auto;
+    }
+}
   
   /* @media (max-width: 480px) {
     .controlsCafeteria button {

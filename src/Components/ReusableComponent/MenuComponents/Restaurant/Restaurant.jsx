@@ -38,14 +38,27 @@ const Restaurant = () => {
       >
         <img src={images[currentPage]} alt={`Page ${currentPage + 1}`} />
       </div>
-      <div className="controls">
+
+
+      <div className="controlsRest left">
+        <button onClick={handlePrev} disabled={currentPage === 0}>
+        &lt;
+        </button>
+      </div>
+      <div className="controlsRest right">
+        <button onClick={handleNext} disabled={currentPage === images.length - 1}>
+        &gt; 
+        </button>
+      </div>
+
+      {/* <div className="controls">
         <button onClick={handlePrev} disabled={currentPage === 0}>
           Previous
         </button>
         <button onClick={handleNext} disabled={currentPage === images.length - 1}>
           Next
         </button>
-      </div>
+      </div> */}
     </div>
   );
 };

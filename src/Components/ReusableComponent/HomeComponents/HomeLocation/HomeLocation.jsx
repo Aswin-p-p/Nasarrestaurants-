@@ -25,7 +25,7 @@ function HomeLocation() {
       <div className="OP_details">
         <h5>Location</h5>
         <p>Old Airport Road </p>
-        <p>Shaikh Rashid Bin Saeed Al Maktoum Street, Al Karamah St Near Sheikh Khalifa Medical City - Abu Dhabi , United Arab Emirates</p>
+        <p>Sheikh Rashid Bin Saeed Al Maktoum Street, Al Karamah St Near Sheikh Khalifa Medical City - Abu Dhabi, United Arab Emirates</p>
       </div>
     </div>
 

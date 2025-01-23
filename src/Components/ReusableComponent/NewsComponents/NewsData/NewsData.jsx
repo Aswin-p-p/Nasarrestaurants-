@@ -1,7 +1,29 @@
-import React from 'react'
+import React, { useState } from 'react';
 import './NewsData.css'
 
 function NewsData() {
+
+    const [showModal, setShowModal] = useState(false);
+
+    const handleReadMore = () => {
+      setShowModal(true);
+    };
+  
+    const handleCloseModal = () => {
+      setShowModal(false);
+    };
+
+    const renderModalContent = () => {
+        return (
+          <img
+            src="assets/newsimg/JavabIMG.jpg" // Path to your image in the public folder
+            alt="Poster"
+            style={{ maxWidth: '100%', maxHeight: '80vh', display: 'block', margin: '0 auto' }} // Responsive image
+          />
+        );
+      };
+
+
   return (
     <>
     
@@ -16,7 +38,33 @@ function NewsData() {
 
   <div className="news-row">
 
+
     <div className="nw-Row1">
+      <div className="img1"><img src="assets/newsimg/javab.jpg" alt=""/></div>
+      <div className="nwContent">
+        <h3>Nasar Restaurant's JAVAB show: A night of captivating music and cultural celebration</h3>
+        {/* <h3>Experience the magic of JAVAB: A musical evening at Naser Restaurant</h3> */}
+        <p className="date">On January 3, 2025</p>
+        <p style={{opacity:'0.7'}}>Nasar Restaurant  hosted an exciting musical show called JAVAB. The event featured performances by famous artists, creating an unforgettable evening of music and entertainment. Guests enjoyed a lively atmosphere filled with captivating melodies and rhythms. It was a night to remember, celebrating talent and culture.   
+        </p>
+        <button className="readmore" onClick={handleReadMore}>
+          Read more
+        </button>
+
+        {showModal && (
+          <div className="modal">
+            <div className="modal-content">
+              <span className="close" onClick={handleCloseModal}>
+                &times;
+              </span>
+              {renderModalContent()}
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+
+    {/* <div className="nw-Row1">
       <div className="img1"><img src="assets/newsimg/1.jpg" alt=""/></div>
       <div className="nwContent">
         <h3>Discover Culinary Excellence in the Heart of Abu Dhabi/Sample news </h3>
@@ -47,7 +95,7 @@ function NewsData() {
         </p>
         <button className="readmore">Read more</button>
       </div>
-    </div>
+    </div> */}
     
   </div>
 

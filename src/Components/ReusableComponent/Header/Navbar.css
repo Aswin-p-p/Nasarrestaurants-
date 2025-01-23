@@ -92,7 +92,7 @@
   .nav-item a{
     text-transform: uppercase;
     font-family: 'TrajanPro-Regular';
-    font-size: 12px;
+    font-size: 17px;
     color: #fff;
   }
   #plus1{
@@ -121,7 +121,7 @@
         margin-top: 5px;
       }
       .nav .nav-item{
-        padding: 10px ;
+        padding: 4px ;
       }
      
      

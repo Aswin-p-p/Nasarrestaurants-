@@ -14,7 +14,7 @@ function HomeSpecials() {
     <div className="description">
       <h1>Mandi and Shawarma</h1>
       <p>Mandi: A fragrant rice dish cooked with meat (usually lamb or chicken) and a blend of spices, traditionally prepared in </p>
-      <p>Shawarma: Thinly sliced marinated meat (beef, chicken, or lamb) cooked on a vertical rotisserie and served in a wrap or pita with vegetables, tahini sauce, and pickles.a tandoor oven. It's known for its tender meat and aromatic flavors</p>
+      <p>Shawarma: Thinly sliced marinated meat (beef, chicken, or lamb) cooked on a vertical rotisserie and served in a wrap or pita with vegetables, tahini sauce, and pickles. It's known for its tender meat and aromatic flavors</p>
   </div>
   </div>
 </div>
