@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { z } from 'zod';
+import Swal from 'sweetalert2';
 
 // Define the validation schema using Zod
 const formSchema = z.object({
@@ -16,7 +17,7 @@ function useForm() {
     email: '',
     phoneNumber: '',
     location: '', // Updated field
-    feedback: '' // New field
+    feedback: '' 
   });
 
   const [formErrors, setFormErrors] = useState({
@@ -62,10 +63,10 @@ function useForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    // Validate form data with Zod
+  
     const result = formSchema.safeParse(formData);
-
+      console.log(result);
+      
     if (!result.success) {
       // Extract errors from Zod validation
       const errors = result.error.format();
@@ -73,13 +74,61 @@ function useForm() {
         name: errors.name?._errors[0] || '',
         email: errors.email?._errors[0] || '',
         phoneNumber: errors.phoneNumber?._errors[0] || '',
-        location: errors.location?._errors[0] || '', // Updated field
-        feedback: errors.feedback?._errors[0] || '' // New field
+        location: errors.location?._errors[0] || '',
+        feedback: errors.feedback?._errors[0] || '' 
       });
       return;
     }
-
+  
+    try {
+      setLoading(true); 
+      const response = await fetch('http://localhost:5000/api/submit-form1', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+  
+      if (!response.ok) {
+        throw new Error('Failed to submit form data.');
+      }
+  
+      const responseData = await response.json();
+      Swal.fire({
+        title: 'Success!',
+        text: 'Form submitted successfully.',
+        icon: 'success',
+        confirmButtonText: 'OK',
+      });
+  
+      setFormData({
+        name: '',
+        email: '',
+        phoneNumber: '',
+        location: '',
+        feedback: ''
+      });
+      setFormErrors({
+        name: '',
+        email: '',
+        phoneNumber: '',
+        location: '',
+        feedback: ''
+      });
+      
+    } catch (error) {
+      Swal.fire({
+        title: 'Error!',
+        text: error.message || 'An error occurred during form submission.',
+        icon: 'error',
+        confirmButtonText: 'Try Again',
+      });
+    } finally {
+      setLoading(false); 
+    }
   };
+  
 
   return {
     formData,

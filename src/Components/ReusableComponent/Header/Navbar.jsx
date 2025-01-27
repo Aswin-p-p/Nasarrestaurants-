@@ -16,7 +16,7 @@ function Navbar() {
       <div className="socialMedia">
         <li><a href=""><img src="assets/images/twitter_icon.png"  alt="" width="15px"/></a></li>
         <li><a href=""><img src="assets/images/facebook.png" alt="" width="10px"/></a></li>
-        <li><a href=""><img src="assets/images/instagram.png" alt="" width="15px"/></a></li>
+        <li><a href="https://www.instagram.com/restaurantnasar/" target='_blank'><img src="assets/images/instagram.png" alt="" width="15px"/></a></li>
         <li><a href=""><img src="assets/images/telegram.png" alt="" width="15px"/></a></li>
       </div>
   </div>
